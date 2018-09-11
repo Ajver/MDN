@@ -1,0 +1,240 @@
+/*
+  Colors has been taken from 
+  https://flatuicolors.com/palette/us
+
+  Header image from
+  https://www.pexels.com/
+
+  Free resources - free advertising
+*/
+
+html {
+  font-size: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dfe6e9;
+  font-family: sans-serif;
+}
+
+.page-header {
+  height: 100vh;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header .main-logo {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 80rem;
+  letter-spacing: 8px;
+  position: absolute;
+  right: 10%;
+  bottom: 20px;
+  color: #e17055;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+}
+
+.main-nav {
+  height: 60px;
+  background-color: #2d3436;
+}
+
+.main-nav ul {
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  
+  transition: color .4s
+}
+
+.main-nav li {
+  height: 100%;
+  list-style: none;
+  font-size: 24rem;
+  
+  transition: border-color .4s;
+}
+
+.main-nav li:hover {
+  cursor: pointer;
+  border-color: #d63031;
+}
+
+.main-nav li:hover a {
+  color: #d63031;
+}
+  
+main {
+  font-size: 20rem;
+  padding: 0 50px;
+  width: auto;
+  margin: auto;
+  margin-right: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+
+main img {
+  width: 100%;
+}
+
+main figure {
+  margin: 60px 0;
+}
+
+main figcaption {
+  text-align: center;
+  font-size: 18rem;
+  color: #636e72;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 48rem;
+  color: #ff7675;
+  letter-spacing: 5px;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36rem;
+  color: #e84393;
+  letter-spacing: 3px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 40px 0;
+  width: 100%;
+  color: #636e72;
+  line-height: 30rem;
+  letter-spacing: 1px;
+}
+
+.aside-nav {
+  float: left;
+  width: 500px;
+  height: 200px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.aside-nav ul {
+  margin: 40px 0;
+}
+  
+.aside-nav li {
+  font-size: 18rem;
+  margin: 5px 0;
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+
+.aside-nav li a { 
+  color: #636e72;
+  text-decoration: none;
+  
+  transition: color .4s;
+}
+
+.aside-nav li a:hover { 
+  color: #e84393;
+}
+
+.page-footer {
+  clear: both;
+  color: #dfe6e9;
+  background-color: #636e72;
+  padding: 100px;
+  box-sizing: border-box;
+  font-size: 20rem;
+}
+
+.page-footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.page-footer h1 {
+/*  color: #fd79a8;*/
+  text-align: center;
+}
+
+.page-footer h3 {
+  color: #ed6565;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+.page-footer a {
+  text-decoration: none;
+  color: #b2bec3;
+  
+  transition: color .4s;
+}
+
+.page-footer a:hover {
+  color: #fab1a0;
+}
+
+.page-footer-block {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.page-footer p {
+  font-size: 16rem;
+  margin: 5px 0;
+  color: #b2bec3;
+}
+
+.page-footer-contact {
+  text-align: right;
+}
+
+.page-footer-links {
+  text-align: left;
+}
+
+.page-footer aside {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.page-footer aside a {
+  color: #dfe6e9;
+}
