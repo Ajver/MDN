@@ -8,15 +8,17 @@ body {
     color: #d6d6d6;
 }
 
-.foo
-{
-background: -moz-radial-gradient(circle, yellow, green);
+.foo {
+    background: -webkit-radial-gradient(circle, yellow, green);
+    background: -moz-radial-gradient(circle, yellow, green);
+    background: -o-radial-gradient(circle, yellow, green);
+    background: radial-gradient(circle, yellow, green);
+    width: 200px;
+    height: 200px;
 }
 
-
-
 .page-header {
-
+    text-align: center;
 }
 
 .page-footer {
