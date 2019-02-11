@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,19 +9,82 @@ body {
     color: #d6d6d6;
 }
 
-.foo {
-    background: -webkit-radial-gradient(circle, yellow, green);
-    background: -moz-radial-gradient(circle, yellow, green);
-    background: -o-radial-gradient(circle, yellow, green);
-    background: radial-gradient(circle, yellow, green);
+.boxes-container,
+.container {
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxes-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
     width: 200px;
     height: 200px;
 }
 
-.page-header {
-    text-align: center;
+.animated-box {
+    transition: .2s;
+}
+.animated-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px #3b3b94;
 }
 
-.page-footer {
-
+.rad-grad {
+    background: -webkit-radial-gradient(circle, orange, red);
+    background: -moz-radial-gradient(circle, orange, red);
+    background: -o-radial-gradient(circle, orange, red);
+    background: radial-gradient(circle, orange, red);
 }
+
+.ling-grad {
+    background: -webkit-linear-gradient(white, black);
+    background: -moz-linear-gradient(white, black);
+    background: -o-linear-gradient(white, black);
+    background: linear-gradient(white, black);
+}
+
+.ling-grad-spec {
+    background: -webkit-linear-gradient(right bottom, blue, white);
+    background: -moz-linear-gradient(right bottom, blue, white);
+    background: -o-linear-gradient(right bottom, blue, white);
+    background: linear-gradient(right bottom, blue, white);
+}
+
+.opacity-box {
+    opacity: 0;
+}
+.opacity-box:hover {
+    opacity: 1;
+}
+
+.opacity-box.first {
+    background-color: #000000;
+    opacity: .5;
+}
+
+.opacity-box.second {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity-box.third {
+    opacity: .3;
+    background-color: #005511;
+}
+.opacity-box.third:hover {
+    opacity: 1;
+}
+
