@@ -55,6 +55,7 @@ body {
 }
 
 .ling-grad::before,
+.opacity-box.second::before,
 .opacity-box.second {
     font-size: 120px;
     display: flex;
@@ -111,6 +112,9 @@ body {
     opacity: 1;
 }
 
+.opacity-box.second::before {
+    content: '?';
+}
 .opacity-box.second:hover {
     box-shadow: 0 0 60px inset;
     border-top-right-radius: 50%;
@@ -119,9 +123,19 @@ body {
 
 .opacity-box.third {
     opacity: .3;
-    background-color: #005511;
+    background-color: #abad1e;
 }
 .opacity-box.third:hover {
     opacity: 1;
+    transform: rotate(45deg) scale(0.62);
 }
 
+.list-container {
+    line-height: 1.6;
+    width: auto;
+    margin: auto;
+}
+
+.list-container li:nth-child(even) {
+    color: purple;
+}
