@@ -113,6 +113,8 @@ body {
 
 .opacity-box.second:hover {
     box-shadow: 0 0 60px inset;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 
 .opacity-box.third {
